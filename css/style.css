@@ -469,3 +469,103 @@ i {
     gap: 30px;
   }
 }
+.section-title.contact {
+  margin-bottom: 60px;
+  text-align: center;
+}
+.section-title.contact h2 {
+  color: #fff;
+}
+.section-title.contact span {
+  display: inline-block;
+  width: 80px;
+  height: 5px;
+  background-color: #13726A;
+}
+.section-title.contact p {
+  margin-top: 10px;
+  color: #fff;
+}
+
+.contact-us-section {
+  padding: 100px 0;
+  background-image: url("../images/contact-us.jpg");
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(39, 39, 39, 0.794);
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+}
+
+.contact-us-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-us-content form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-us-content form .inputs-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.contact-us-content form .inputs-container input {
+  padding: 7px;
+  width: 48%;
+  border: 1px solid #eee;
+  background-color: #eafbfa;
+  border-radius: 5px;
+}
+.contact-us-content form .message {
+  margin: 25px 0;
+  width: 100%;
+  display: flex;
+}
+.contact-us-content form .message textarea {
+  padding: 5px;
+  width: 100%;
+  border: 1px solid #eee;
+  background-color: #eafbfa;
+  border-radius: 5px;
+}
+.contact-us-content form .btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.contact-us-content form .btn input {
+  padding: 10px 20px;
+  width: 50%;
+  color: #fff;
+  background-color: #13726A;
+  border: none;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .contact-us-section {
+    padding: 60px 0;
+  }
+
+  .contact-us-content form {
+    width: 100%;
+  }
+  .contact-us-content form .inputs-container {
+    width: 100%;
+    flex-direction: column;
+  }
+  .contact-us-content form .inputs-container input {
+    width: 100%;
+  }
+  .contact-us-content form .inputs-container input.first {
+    margin-bottom: 25px;
+  }
+  .contact-us-content form .btn input {
+    width: 100%;
+  }
+}

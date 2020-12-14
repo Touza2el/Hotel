@@ -594,3 +594,129 @@ i {
 }
 
 // End Features Section
+
+// Start Contact Us Section
+
+.section-title.contact {
+  margin-bottom: 60px;
+  text-align: center;
+
+  h2 {
+    color: #fff;
+  }
+
+  span {
+    display: inline-block;
+    width: 80px;
+    height: 5px;
+    background-color: $main-green;
+  }
+
+  p {
+    margin-top: 10px;
+    color: #fff;
+  }
+}
+
+.contact-us-section {
+  padding: 100px 0;
+  background-image: url('../images/contact-us.jpg');
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(39, 39, 39, 0.794);
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+}
+
+.contact-us-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .inputs-container {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      input {
+        padding: 7px;
+        width: 48%;
+        border: 1px solid #eee;
+        background-color: rgba(234, 251, 250, 1);
+        border-radius: 5px;
+      }
+    }
+
+    .message {
+      margin: 25px 0;
+      width: 100%;
+      display: flex;
+
+      textarea {
+        padding: 5px;
+        width: 100%;
+        border: 1px solid #eee;
+        background-color: rgba(234, 251, 250, 1);
+        border-radius: 5px;
+      }
+    }
+
+    .btn {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      input {
+        padding: 10px 20px;
+        width: 50%;
+        color: #fff;
+        background-color: $main-green;
+        border: none;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+// Media Queries
+@media(max-width:768px) {
+  .contact-us-section {
+    padding: 60px 0;
+  }
+
+  .contact-us-content {
+    form {
+      width: 100%;
+
+      .inputs-container {
+        width: 100%;
+
+        flex-direction: column;
+
+
+        input {
+          width: 100%;
+        }
+
+        input.first {
+          margin-bottom: 25px;
+        }
+      }
+
+      .btn {
+        input {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+// End Contact Us Section
