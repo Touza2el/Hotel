@@ -56,6 +56,41 @@ i {
   }
 }
 
+.section-title {
+  margin-bottom: 60px;
+  text-align: center;
+
+  h2 {
+    font-size: 35px;
+    color: #272727;
+    text-transform: uppercase;
+  }
+
+  span {
+    display: inline-block;
+    width: 80px;
+    height: 5px;
+    background-color: $main-green;
+  }
+
+  p {
+    margin-top: 10px;
+    color: gray;
+  }
+}
+
+@media (max-width:768px) {
+
+  .section-title {
+    margin-bottom: 40px;
+
+    h2 {
+      font-size: 25px;
+    }
+
+  }
+}
+
 // End General Style
 
 // Start Top Header Section
@@ -344,3 +379,218 @@ i {
 }
 
 // End Hero Section
+
+// Start Rooms Section
+
+.rooms-section {
+  padding: 100px 0;
+}
+
+.rooms-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.room-item {
+
+
+  img {
+    display: block;
+    width: 100%;
+    border: 2px solid #eee;
+  }
+
+  .text {
+    padding: 10px 0;
+    background-color: rgba(238, 238, 238, 0.6);
+    text-align: center;
+
+    p {
+      margin-bottom: 5px;
+      color: #272727;
+      font-family: 'Work Sans', sans-serif;
+      font-weight: 500;
+    }
+
+    span {
+      color: $main-green;
+    }
+  }
+}
+
+// Media Queries
+
+@media (max-width:768px) {
+  .rooms-section {
+    padding: 65px 0;
+  }
+
+  .rooms-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+// End Rooms Section
+
+// Start Email Section
+
+.email-section {
+  display: flex;
+  padding: 50px 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(../images/rooms/3.jpg);
+  background-color: rgba(19, 114, 106, 1);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+
+  h2 {
+    margin-bottom: 7px;
+    color: #fff;
+    font-size: 32px;
+  }
+
+  p {
+    color: #fff;
+    font-size: 13px;
+  }
+
+  .email-form {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+
+    .input {
+      width: 300px;
+      padding: 7px;
+      border: none;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      color: #fff;
+      background-color: #000;
+      border: none;
+      cursor: pointer;
+      font-size: 15px;
+      text-transform: uppercase;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+
+      &:hover {
+        background-color: #0e5049;
+      }
+    }
+  }
+}
+
+// Media Queries
+
+@media (max-width:768px) {
+
+  .email-section {
+    .email-form {
+
+      .btn {
+        padding: 7px 15px;
+        font-size: 13px;
+      }
+
+      .input {
+        width: 200px;
+      }
+    }
+  }
+}
+
+// End Email Section
+
+// Start Restaurant Section
+
+.restaurant-section {
+  padding: 100px 0;
+}
+
+.restaurant-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.restaurant-item {
+  img {
+    display: block;
+    width: 100%;
+    border: 2px solid #eee;
+  }
+}
+
+// Media Queries
+@media (max-width:768px) {
+  .restaurant-section {
+    padding: 70px 0;
+  }
+
+  .restaurant-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+// End Restaurant Section
+
+// Start Features Section
+
+.features-section {
+  padding: 100px 0;
+  background-color: #eafbfa;
+}
+
+.features-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.feature-item {
+  padding: 40px 30px;
+  background-color: #fff;
+  text-align: center;
+  border: 1px solid #eee;
+
+  i {
+    color: $main-green;
+    font-size: 40px;
+  }
+
+  h4 {
+    margin: 10px 0;
+  }
+
+  p {
+    color: #666;
+    line-height: 1.6;
+  }
+}
+
+// Media Queries
+
+@media (max-width:768px) {
+  .features-section {
+    padding: 60px 0;
+
+  }
+
+  .features-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+// End Features Section

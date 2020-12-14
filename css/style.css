@@ -51,6 +51,34 @@ i {
     margin: auto;
   }
 }
+.section-title {
+  margin-bottom: 60px;
+  text-align: center;
+}
+.section-title h2 {
+  font-size: 35px;
+  color: #272727;
+  text-transform: uppercase;
+}
+.section-title span {
+  display: inline-block;
+  width: 80px;
+  height: 5px;
+  background-color: #13726A;
+}
+.section-title p {
+  margin-top: 10px;
+  color: gray;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    margin-bottom: 40px;
+  }
+  .section-title h2 {
+    font-size: 25px;
+  }
+}
 .top-header {
   padding: 10px 0;
   color: #646464;
@@ -277,5 +305,167 @@ i {
   .hero-section-content {
     padding: 0;
     width: 85%;
+  }
+}
+.rooms-section {
+  padding: 100px 0;
+}
+
+.rooms-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.room-item img {
+  display: block;
+  width: 100%;
+  border: 2px solid #eee;
+}
+.room-item .text {
+  padding: 10px 0;
+  background-color: rgba(238, 238, 238, 0.6);
+  text-align: center;
+}
+.room-item .text p {
+  margin-bottom: 5px;
+  color: #272727;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+}
+.room-item .text span {
+  color: #13726A;
+}
+
+@media (max-width: 768px) {
+  .rooms-section {
+    padding: 65px 0;
+  }
+
+  .rooms-content {
+    grid-template-columns: 1fr;
+  }
+}
+.email-section {
+  display: flex;
+  padding: 50px 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(../images/rooms/3.jpg);
+  background-color: #13726a;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+.email-section h2 {
+  margin-bottom: 7px;
+  color: #fff;
+  font-size: 32px;
+}
+.email-section p {
+  color: #fff;
+  font-size: 13px;
+}
+.email-section .email-form {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+.email-section .email-form .input {
+  width: 300px;
+  padding: 7px;
+  border: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.email-section .email-form .btn {
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  text-transform: uppercase;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.email-section .email-form .btn:hover {
+  background-color: #0e5049;
+}
+
+@media (max-width: 768px) {
+  .email-section .email-form .btn {
+    padding: 7px 15px;
+    font-size: 13px;
+  }
+  .email-section .email-form .input {
+    width: 200px;
+  }
+}
+.restaurant-section {
+  padding: 100px 0;
+}
+
+.restaurant-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.restaurant-item img {
+  display: block;
+  width: 100%;
+  border: 2px solid #eee;
+}
+
+@media (max-width: 768px) {
+  .restaurant-section {
+    padding: 70px 0;
+  }
+
+  .restaurant-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+.features-section {
+  padding: 100px 0;
+  background-color: #eafbfa;
+}
+
+.features-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.feature-item {
+  padding: 40px 30px;
+  background-color: #fff;
+  text-align: center;
+  border: 1px solid #eee;
+}
+.feature-item i {
+  color: #13726A;
+  font-size: 40px;
+}
+.feature-item h4 {
+  margin: 10px 0;
+}
+.feature-item p {
+  color: #666;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .features-section {
+    padding: 60px 0;
+  }
+
+  .features-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
 }
