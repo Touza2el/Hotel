@@ -569,3 +569,11 @@ i {
     width: 100%;
   }
 }
+.footer {
+  padding: 25px 0;
+  color: #646464;
+  background-color: #F9F8F7;
+}
+.footer p {
+  text-align: center;
+}
